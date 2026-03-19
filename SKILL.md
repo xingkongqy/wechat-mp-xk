@@ -1,7 +1,7 @@
 ---
 name: wechat-mp-xk
 description: 微信公众号发布工具 - 安全版，支持 Knowledge-Base 主题、分步流程、一键发布
-version: 1.1.0
+version: 1.1.1
 author: 九章快手团队
 license: MIT
 tags:
