@@ -132,46 +132,6 @@ python3 wxgzh_step_by_step.py publish \
 
 ---
 
-## 🔒 安全最佳实践
-
-### ❌ 禁止行为
-
-1. **不要硬编码敏感信息**
-   ```python
-   # ❌ 错误
-   APPID = 'wx50ccea6fe909ee09'
-   
-   # ✅ 正确
-   import os
-   APPID = os.environ.get('WX_APPID')
-   ```
-
-2. **不要提交 .env 文件到 Git**
-   ```bash
-   # .env 已在 .gitignore 中
-   # 不要手动添加！
-   ```
-
-3. **不要在日志中打印敏感信息**
-   ```python
-   # ❌ 错误
-   print(f"Secret: {SECRET}")
-   
-   # ✅ 正确
-   print(f"Secret: {'*' * len(SECRET)}")
-   ```
-
-### ✅ 推荐做法
-
-- ✅ 使用环境变量
-- ✅ 使用密钥管理服务
-- ✅ 定期轮换密钥（90 天）
-- ✅ 限制文件权限（chmod 600）
-
-详细安全说明请参考 [SECURITY.md](SECURITY.md)
-
----
-
 ## 📁 文件结构
 
 ```
