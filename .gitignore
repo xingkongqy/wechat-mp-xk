@@ -1,0 +1,49 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+build/
+dist/
+*.egg-info/
+
+# Node
+node_modules/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# 🔒 敏感信息（重要！）
+.env
+.env.local
+.env.*.local
+*.env
+config.json
+settings.json
+*.secret
+*.key
+
+# 输出文件
+.wxgzh/
+*.json!
+output/
+results/
+
+# Token 缓存
+/tmp/wechat_token.json
+*.token
+
+# 日志
+*.log
+logs/
