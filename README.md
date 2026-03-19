@@ -3,7 +3,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![ClawHub](https://img.shields.io/badge/clawhub-wechat--mp--xk-green.svg)](https://clawhub.ai)
-[![Version](https://img.shields.io/badge/version-1.1.2-blue.svg)](https://github.com/xingkongqy/wechat-mp-xk)
+[![Version](https://img.shields.io/badge/version-1.2.0-blue.svg)](https://github.com/xingkongqy/wechat-mp-xk)
 **一键将 Markdown 文章发布到微信公众号草稿箱**
 
 ---
