@@ -377,7 +377,7 @@ def cmd_publish(args):
     
     # 发布
     title = args.title or os.path.basename(args.article)
-    author = args.author or '黑白'
+    author = args.author or '黑白交织'
     summary = args.summary or ''
     
     try:
@@ -425,7 +425,7 @@ def cmd_article(args):
     # Step 4: publish
     args.article = html_file
     args.title = args.title or front_matter.get('title')
-    args.author = args.author or front_matter.get('author', '黑白')
+    args.author = args.author or front_matter.get('author', '黑白交织')
     args.summary = args.summary or front_matter.get('digest', '')
     args.cover = media_id or args.cover
     cmd_publish(args)
