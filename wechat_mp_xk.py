@@ -26,7 +26,7 @@ from datetime import datetime
 APPID = os.environ.get('WX_APPID')
 SECRET = os.environ.get('WX_SECRET')
 TOKEN_FILE = '/tmp/wechat_token.json'
-DEFAULT_OUTPUT_DIR = './.wxgzh'
+DEFAULT_OUTPUT_DIR = './.wechat_mp_xk'
 
 # ==================== 工具函数 ====================
 
@@ -229,7 +229,7 @@ def fix_html(html_content, upload_images=True):
     
     return html_content
 
-def create_draft(title, content, summary, thumb_media_id, author='黑白'):
+def create_draft(title, content, summary, thumb_media_id, author='黑白交织'):
     """创建草稿"""
     token = get_access_token()
     url = f'https://api.weixin.qq.com/cgi-bin/draft/add?access_token={token}'
@@ -461,7 +461,7 @@ def main():
     p_publish.add_argument('--article', required=True, help='HTML 文章文件')
     p_publish.add_argument('--cover', required=True, help='封面图路径或 media_id')
     p_publish.add_argument('--title', help='文章标题')
-    p_publish.add_argument('--author', default='黑白', help='作者名')
+    p_publish.add_argument('--author', default='黑白交织', help='作者名')
     p_publish.add_argument('--summary', default='', help='文章摘要')
     p_publish.set_defaults(func=cmd_publish)
     
@@ -472,7 +472,7 @@ def main():
     p_article.add_argument('--output-dir', default=DEFAULT_OUTPUT_DIR, help='输出目录')
     p_article.add_argument('--cover', help='封面图路径')
     p_article.add_argument('--title', help='文章标题')
-    p_article.add_argument('--author', default='黑白', help='作者名')
+    p_article.add_argument('--author', default='黑白交织', help='作者名')
     p_article.add_argument('--summary', default='', help='文章摘要')
     p_article.set_defaults(func=cmd_article)
     
